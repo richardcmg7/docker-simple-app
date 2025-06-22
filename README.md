@@ -43,4 +43,25 @@ Accede desde tu navegador a `http://dockerapp.local:5000` (tras configurar `/etc
 
 ---
 
+<details>
+<summary>Ver diagrama del proceso (Mermaid)</summary>
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Crear app Flask en app/main.py]
+    B --> C[Crear requirements.txt]
+    C --> D[Crear Dockerfile]
+    D --> E[Construir imagen Docker]
+    E --> F[Ejecutar contenedor y exponer puerto 5000]
+    F --> G[Configurar firewall y red local]
+    G --> H[Modificar /etc/hosts para dominio local]
+    H --> I[Inicializar repo Git y crear .gitignore]
+    I --> J[Limpiar archivos indeseados del repo]
+    J --> K[Configurar remoto SSH personalizado]
+    K --> L[Hacer push a GitHub]
+    L --> M[Fin]
+```
+
+</details>
+
 > Proyecto creado para fines didácticos y de práctica con Docker, Flask y Git.
