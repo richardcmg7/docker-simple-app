@@ -1,0 +1,12 @@
+# Entornos virtuales
+.venv/
+venv/
+__pycache__/
+*.pyc
+# Archivos de configuración de usuario
+.env
+# Archivos de Docker
+*.log
+# Otros
+.idea/
+.vscode/
